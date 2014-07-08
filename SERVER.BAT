@@ -1,1 +1,1 @@
-npm install && bower install && harp server web
+npm install && bower install && harp server app
