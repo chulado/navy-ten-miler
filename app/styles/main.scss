@@ -1,0 +1,28 @@
+@import "../vendor/bootstrap-sass/lib/bootstrap";
+
+@import "mixins";
+
+body, html {
+  height: 100%;
+}
+
+.page-section {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .container {
+    min-height: 100vh;
+  }
+}
+
+
+#thesis {
+  background: url(../images/sunset-ship.jpg) no-repeat;
+  background-position: 0 60%;
+  background-size: cover;
+}
+
+#purpose {
+  background: #788184;
+}
