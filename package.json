@@ -1,0 +1,21 @@
+{
+  "name": "navy-ten-miler",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-deploy": "~0.1.7",
+    "harp": "~0.12.1"
+  },
+  "devDependencies": {
+    "component": "^0.19.9",
+    "grunt": "^0.4.5",
+    "grunt-gh-pages": "^0.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
