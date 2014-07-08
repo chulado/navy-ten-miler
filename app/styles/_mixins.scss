@@ -1,5 +1,5 @@
 .arrowed-down {
-  padding-bottom: 18.2vw;
+  padding-bottom: 14.8vw;
 
   &:before {
     width: 100vw;
@@ -8,10 +8,10 @@
     position: absolute;
     right: 50%;
     top: 100%;
-    margin-top: -18.2vw;
+    margin-top: -14.8vw;
     -webkit-transform-style: preserve-3d; 
     -webkit-backface-visibility: hidden;
-    transform: skewY(20deg);
+    transform: skewY(16.5deg);
     content: "";
   }
   &:after {
@@ -21,17 +21,17 @@
     position: absolute;
     left: 50%;
     top: 100%;
-    margin-top: -18.2vw;
+    margin-top: -14.8vw;
     -webkit-transform-style: preserve-3d; 
     -webkit-backface-visibility: hidden;
-    transform: skewY(-20deg);
+    transform: skewY(-16.5deg);
 
     content: "";
   }
 }
 
 .arrowed-up {
-  padding-top: 18.2vw;
+  padding-top: 14.8vw;
 
   &:before {
     width: 100vw;
@@ -40,10 +40,10 @@
     position: absolute;
     right: 50%;
     bottom: 100%;
-    margin-bottom: -18.2vw;
+    margin-bottom: -14.8vw;
     -webkit-transform-style: preserve-3d; 
     -webkit-backface-visibility: hidden;
-    transform: skewY(-20deg);
+    transform: skewY(-16.5deg);
     content: "";
   }
   &:after {
@@ -53,10 +53,10 @@
     position: absolute;
     left: 50%;
     bottom: 100%;
-    margin-bottom: -18.2vw;
+    margin-bottom: -14.8vw;
     -webkit-transform-style: preserve-3d; 
     -webkit-backface-visibility: hidden;
-    transform: skewY(20deg);
+    transform: skewY(16.5deg);
     content: "";
   }
 }
@@ -67,4 +67,8 @@
 
 .arrowed-light { 
     &:before, &:after { background: url(../images/pattern-light.jpg); }
+}
+
+.extra-arrows {
+
 }
