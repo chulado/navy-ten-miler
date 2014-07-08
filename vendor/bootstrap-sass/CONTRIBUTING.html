@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navy Ten Miler</title>
+
+    <link href="styles/main.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <h1>Contributing to Bootstrap</h1>
+<p>Looking to contribute something to Bootstrap? <strong>Here&#39;s how you can help.</strong></p>
+<h2>Reporting issues</h2>
+<p>We only accept issues that are bug reports or feature requests. Bugs must be isolated and reproducible problems that we can fix within the Bootstrap core. Please read the following guidelines before opening any issue.</p>
+<ol>
+<li><strong>Search for existing issues.</strong> We get a lot of duplicate issues, and you&#39;d help us out a lot by first checking if someone else has reported the same issue. Moreover, the issue may have already been resolved with a fix available.</li>
+<li><strong>Create an isolated and reproducible test case.</strong> Be sure the problem exists in Bootstrap&#39;s code with a <a href="http://css-tricks.com/reduced-test-cases/">reduced test case</a> that should be included in each bug report.</li>
+<li><strong>Include a live example.</strong> Make use of jsFiddle or jsBin to share your isolated test cases.</li>
+<li><strong>Share as much information as possible.</strong> Include operating system and version, browser and version, version of Bootstrap, customized or vanilla build, etc. where appropriate. Also include steps to reproduce the bug.</li>
+</ol>
+<h2>Pull requests</h2>
+<ul>
+<li>CSS changes must be done in <code>.less</code> files first, never just the compiled <code>.css</code> files</li>
+<li>If modifying the <code>.less</code> files, always recompile and commit the compiled files <code>bootstrap.css</code> and <code>bootstrap.min.css</code></li>
+<li>Try not to pollute your pull request with unintended changes--keep them simple and small</li>
+<li>Try to share which browsers your code has been tested in before submitting a pull request</li>
+<li>Pull requests should always be against the <code>master</code> branch, never against <code>gh-pages</code>.</li>
+</ul>
+<h2>Coding standards</h2>
+<h3>HTML</h3>
+<ul>
+<li>Two spaces for indentation, never tabs</li>
+<li>Double quotes only, never single quotes</li>
+<li>Always use proper indentation</li>
+<li>Use tags and elements appropriate for an HTML5 doctype (e.g., self-closing tags)</li>
+<li>Use CDNs and HTTPS for third-party JS when possible. We don&#39;t use protocol-relative URLs in this case because they break when viewing the page locally via <code>file://</code>.</li>
+</ul>
+<h3>CSS</h3>
+<ul>
+<li>Adhere to the <a href="http://markdotto.com/2011/11/29/css-property-order/">RECESS CSS property order</a></li>
+<li>Multiple-line approach (one property and value per line)</li>
+<li>Always a space after a property&#39;s colon (e.g., <code>display: block;</code> and not <code>display:block;</code>)</li>
+<li>End all lines with a semi-colon</li>
+<li>For multiple, comma-separated selectors, place each selector on its own line</li>
+<li>Attribute selectors, like <code>input[type=&quot;text&quot;]</code> should always wrap the attribute&#39;s value in double quotes, for consistency and safety (see this <a href="http://mathiasbynens.be/notes/unquoted-attribute-values">blog post on unquoted attribute values</a> that can lead to XSS attacks).</li>
+</ul>
+<h3>JS</h3>
+<ul>
+<li>No semicolons</li>
+<li>Comma first</li>
+<li>2 spaces (no tabs)</li>
+<li>strict mode</li>
+<li>&quot;Attractive&quot;</li>
+</ul>
+<h2>License</h2>
+<p>With v3.1, we&#39;re moving from the Apache 2 to the MIT license for the Bootstrap code (not the docs). We&#39;re in the process of collecting permissions from all Bootstrap contributors with code still part of the project to make this happen. For details, please see <a href="https://github.com/twbs/bootstrap/issues/2054">#2054</a>.</p>
+<p>By contributing your code, you agree to dual-license your contribution under the <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">Apache 2</a> and <a href="https://github.com/twbs/bootstrap/blob/master/MIT">MIT</a> licenses.</p>
+
+
+    <script src="vendor/prefixfree/prefixfree.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
