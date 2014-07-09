@@ -2,7 +2,7 @@
 
 $font-family-body: "freight-sans-pro";
 $font-family-header: "brandon-grotesque";
-$font-family-header-alt: "brandon-grotesque";
+$font-family-header-alt: "proxima-nova";
 
 $font-family-sans-serif: $font-family-body;
 
@@ -32,6 +32,10 @@ body, html {
 
   .container {
     min-height: 100vh;
+
+    @media (max-width: $screen-sm) {
+      min-height: 320px;
+    }
   }
 }
 
@@ -74,6 +78,32 @@ header {
   .btn {
     padding: 8px 25px;
     margin: 20px 30px;
+  }
+}
+
+.tris {
+  width: 5vw;
+  height: 2.5vw;
+  display: block;
+  margin: 2% auto 3% auto;
+
+  @media (max-width: $screen-sm) {
+    width: 40px;
+    height: 20px;
+  }
+
+  &.tris-med {
+    background: url(../images/tris-med.png) no-repeat center;
+    background-size: contain;
+  }
+}
+
+.hero-copy {
+  font-size: 18px;
+  font-size: 1.4vw;
+
+  @media (max-width: $screen-md) {
+    font-size: 14px;
   }
 }
 
@@ -128,16 +158,49 @@ header {
 
   header {
     position: absolute;
-    bottom: 10%;
+    bottom: 4%;
     left: 0;
     right: 0;
   }
+
 }
 
 #purpose-content {
   .container { 
     max-width: 644px; 
+    min-height: 0;
+  }
+
+  .tris {
+    margin-top: 12%;
   }
 
   background: url(../images/pattern-light.jpg);
+}
+
+
+#course {
+  background: #2d9fd1 url(../images/map.jpg) no-repeat center top;
+  background-size: 100% auto;
+
+  @media (max-width: $screen-xs) {
+    background-size: auto 70%;
+  }
+
+  .container {
+    min-height: 0;
+  }
+
+  .hero-copy {
+    margin: 26% auto 0 auto;
+    max-width: 544px;
+    text-align: center;
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+  }
+
+  .hero-copy, .hero-copy p {
+    color: rgba(255,255,255,0.8);
+
+    &.lead { color: #fff; font-weight: 600; font-family: $font-family-header-alt; }
+  }
 }

@@ -1,5 +1,5 @@
 .arrowed-down {
-  padding-bottom: 14.8vw;
+  padding-bottom: 13.8vw;
 
   &:before {
     width: 100vw;
@@ -30,7 +30,7 @@
 }
 
 .arrowed-up {
-  padding-top: 14.8vw;
+  padding-top: 13.8vw;
 
   &:before {
     width: 100vw;
@@ -60,14 +60,44 @@
   }
 }
 
+.arrowed-dualing {
+  div {
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    height: 7.16vw;
+    position: relative;
+    @extend .arrowed-up;
+    @extend .arrowed-light;
+  }
+
+  clear: both;
+  overflow: hidden;
+}
+
+.arrowed-long-left {
+  padding-bottom: 24.8vw;
+
+  &:after {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: -14.8vw;
+    //-webkit-transform-style: preserve-3d; 
+    //-webkit-backface-visibility: hidden;
+    transform: skewY(-16.5deg);
+
+    content: "";
+  }
+}
+
 .arrowed-dark { 
-    &:before, &:after { background: url(../images/pattern-dark.jpg); }
+  &:before, &:after { background: url(../images/pattern-dark.jpg); }
 }
 
 .arrowed-light { 
-    &:before, &:after { background: url(../images/pattern-light.jpg); }
-}
-
-.extra-arrows {
-
+  &:before, &:after { background: url(../images/pattern-light.jpg); }
 }

@@ -1,7 +1,7 @@
 h1 {
   font-size: 84px;
   font-size: 7vw;
-  line-height: 5vw;
+  line-height: 5.5vw;
   color: #fff;
   font-weight: 900;
   text-transform: uppercase;
@@ -12,6 +12,8 @@ h1 {
     line-height: 38px;
   }
 }
+
+.inverted h1 { color: black; }
 
 h2 {
   padding-top: 8.3%;
@@ -35,7 +37,7 @@ h3, h1 small {
   font-size:  2.333vw;
   line-height: 2.3vw;
   color: #b9b9b9;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
   font-family: $font-family-header-alt;
 
@@ -51,9 +53,11 @@ h3, h1 small {
   }
 }
 
+.inverted h3 { color: #fff; }
+
 h1 small {
   display: block;
-  padding: 0.5% 0 0.25% 0;
+  padding: 0.5% 0 0.5% 0;
 }
 
 h4 {
