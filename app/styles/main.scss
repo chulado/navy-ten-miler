@@ -1,7 +1,8 @@
 //$font-family-sans-serif: "cubano-sharp";
 
 $font-family-body: "freight-sans-pro";
-$font-family-header: "freight-sans-pro";
+$font-family-header: "brandon-grotesque";
+$font-family-header-alt: "brandon-grotesque";
 
 $font-family-sans-serif: $font-family-body;
 
@@ -59,7 +60,7 @@ header {
     font-family: $font-family-body;
     text-transform: uppercase;
     color: #bababa;
-    font-size: 1.4em;
+    font-size: 1.5em;
     padding: 30px 15px 20px;
     @include transition(color $transition);
 
@@ -103,7 +104,12 @@ header {
   header {
     position: absolute;
     width: 100%;    
-    bottom: 1.8%;
+    bottom: 5%;
+
+    @media (max-width: $screen-sm) {
+      bottom: 0.5%;
+      small { display: block; }
+    }
   }
 }
 
