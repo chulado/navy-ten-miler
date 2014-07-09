@@ -123,11 +123,12 @@ header {
 
   .container {
     padding: 2%;
-    min-height: 560px !important;
+    min-height: 560px;
     height: 100vh;
 
     @media (max-width: $screen-sm) {
-      height: 560px;
+      min-height: 0;
+      height: 450px;
     }
   }
 
@@ -137,7 +138,8 @@ header {
     bottom: 5%;
 
     @media (max-width: $screen-sm) {
-      bottom: 0.5%;
+      bottom: -6%;
+      h3 { margin-top; 0; }
       small { display: block; }
     }
   }
