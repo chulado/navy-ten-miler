@@ -1,9 +1,27 @@
+//$font-family-sans-serif: "cubano-sharp";
+
+$font-family-body: "freight-sans-pro";
+$font-family-header: "freight-sans-pro";
+
+$font-family-sans-serif: $font-family-body;
+
+$transition: 0.5s;
+
+$brand-yellow: #ffc706;
+$brand-yellow-lighter: #ffd02d;
+$brand-yellow-darker: #eab500;
+
+$brand-warning: $brand-yellow;
+
 @import "../vendor/bootstrap-sass/lib/bootstrap";
 
 @import "mixins";
+@import "buttons";
+@import "typography";
 
 body, html {
   height: 100%;
+  font-size: 10px;
 }
 
 .page-section {
@@ -16,11 +34,77 @@ body, html {
   }
 }
 
+.container {
+  position: relative;
+}
+
+header {
+  text-align: center;
+}
+
+#navigation {
+  background: url(../images/navigation-bg.png) center;
+  border: none;
+
+  .navbar-brand {
+    width: 105px;
+    height: 38px;
+    padding: 20px 25px;
+    text-indent: -9999em;
+    background: url(../images/logo.png) center no-repeat;
+    box-sizing: content-box;
+  }
+
+  a {
+    font-family: $font-family-body;
+    text-transform: uppercase;
+    color: #bababa;
+    font-size: 1.4em;
+    padding: 30px 15px 20px;
+    @include transition(color $transition);
+
+    &:hover { color: #fff; }
+  }
+
+  .navbar-toggle {
+    margin-top: 21px;
+  }
+
+  .btn {
+    padding: 8px 25px;
+    margin: 20px 30px;
+  }
+}
 
 #thesis {
   background: url(../images/sunset-ship.jpg) no-repeat;
-  background-position: 0 60%;
+  background-position: 50% 90%;
   background-size: cover;
+
+
+  @media (max-width: $screen-sm) {
+    background-position: 10% 100%;
+  }
+
+  h1 {
+    text-shadow: 0 0 100px rgba(0,0,0,0.5);
+  }
+
+  .container {
+    padding: 2%;
+    min-height: 560px !important;
+    height: 100vh;
+
+    @media (max-width: $screen-sm) {
+      height: 560px;
+    }
+  }
+
+  header {
+    position: absolute;
+    width: 100%;    
+    bottom: 1.8%;
+  }
 }
 
 #purpose {
@@ -28,7 +112,26 @@ body, html {
   height: 0;
   min-height: 50%;
 
+  @media (max-width: $screen-sm) {
+      min-height: 320px;
+    }
+
   background: url(../images/coronado-rails.jpg) no-repeat;
   background-position: center center;
   background-size: cover;
+
+  header {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+  }
+}
+
+#purpose-content {
+  .container { 
+    max-width: 644px; 
+  }
+
+  background: url(../images/pattern-light.jpg);
 }

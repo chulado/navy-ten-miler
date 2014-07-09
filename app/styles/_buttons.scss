@@ -1,0 +1,59 @@
+.btn, .btn-default, .btn-danger, .btn-warning, .btn-primary, .btn-secondary {
+  padding: 8px 25px;
+  border-radius: 0;
+  border: none;
+}
+
+.btn-warning {
+  color: black !important;
+  position: relative;
+  border: none;
+  font-weight: bold;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: -13px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-left: 13px solid $brand-yellow;
+    border-bottom: 18px solid transparent;
+  } 
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -13px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 18px solid transparent;
+    border-right: 13px solid $brand-yellow;
+    border-top: 18px solid transparent;
+  } 
+
+  &:hover {
+    color: black !important;
+    background-color: $brand-yellow-lighter !important;
+    &:after {
+      border-left-color: $brand-yellow-lighter;
+    }
+    &:before {
+      border-right-color: $brand-yellow-lighter;
+    }
+  }
+
+  &:focus, &:active {
+    box-shadow: none !important;
+    background-color: $brand-yellow-darker !important;
+    &:after {
+      border-left-color: $brand-yellow-darker;
+    }
+    &:before {
+      border-right-color: $brand-yellow-darker;
+    }
+  }
+
+}
