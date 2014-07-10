@@ -30,6 +30,10 @@ function ScrollCheese (el, settings) {
     _this.updatePosition(_this.settings.scrollEl.scrollTop());
   });
   this.updatePosition(this.curPos);
+
+  this.settings.scrollEl.bind("resize", function() {
+    _this.updateSize();
+  });
 }
 
 ScrollCheese.prototype.updatePosition = function(pos) {
