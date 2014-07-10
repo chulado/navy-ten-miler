@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navy Ten Miler</title>
+
+    <link href="styles/main.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="//use.typekit.net/tse4mee.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="navigation" role="navigation">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Navy Ten Miler</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Purpose</a></li>
+        <li><a href="#">Course</a></li>
+        <li><a href="#">Registration</a></li>
+        <li><a href="#">Volunteers</a></li>
+        <li><a href="#">Apparel</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="btn btn-warning">Register Now</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    
+    <div id="wrapper">
+      <h1>CSS Element Queries</h1>
+<p>Element Queries is a polyfill adding support for element based media-queries to all new browsers (incl. IE8+).
+It allows not only to define media-queries based on window-size but also adds &#39;media-queries&#39; functionality depending on element (any selector supported)
+size while not causing performance lags due to event based implementation.</p>
+<p>It&#39;s a proof-of-concept event-based CSS element dimension query with valid CSS selector syntax.</p>
+<p>Features:</p>
+<ul>
+<li>no performance issues</li>
+<li>no interval/timeout detection. Truly event-based</li>
+<li>no CSS modifications. Valid CSS Syntax</li>
+<li>all CSS selectors available. Uses regular attribute selector</li>
+<li>supports and tested in webkit, gecko and IE(8/9/10).</li>
+<li><code>min-width</code>, <code>min-height</code>, <code>max-width</code> and <code>max-height</code> are supported so far</li>
+<li>works with any layout modifications: HTML (innerHTML etc), inline styles, DOM mutation, CSS3 transitions, fluid layout changes (also percent changes), pseudo classes (:hover etc.), window resizes and more</li>
+<li>no Javascript-Framework dependency (works with jQuery, Mootools, etc.)</li>
+</ul>
+<p>More demos and information: <a href="http://marcj.github.io/css-element-queries/">http://marcj.github.io/css-element-queries/</a></p>
+<h2>Example</h2>
+<pre><code class="language-css">.widget-name {
+    padding: 25px;
+}
+.widget-name[max-width=&quot;200px&quot;] {
+    padding: 0;
+}
+.widget-name[min-width=&quot;500px&quot;] {
+    padding: 55px;
+}
+
+/* responsive images /*
+.responsive-image img {
+    width: 100%;
+}
+
+.responsive-image[max-width^=&#39;400px&#39;] img {
+    content: url(demo/image-400px.jpg);
+}
+
+.responsive-image[max-width^=&#39;1000px&#39;] img {
+    content: url(demo/image-1000px.jpg);
+}
+
+.responsive-image[min-width=&#39;1000px&#39;] img {
+    content: url(demo/image-full.jpg);
+}</code></pre>
+<p>Include the javascript files at the bottom and you&#39;re good to go. No custom javascript calls needed.</p>
+<pre><code class="language-html">&lt;script src=&quot;src/ResizeSensor.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;src/ElementQueries.js&quot;&gt;&lt;/script&gt;</code></pre>
+<h2>Issues</h2>
+<ul>
+<li>So far does not work on <code>img</code> tags. Wrapping with a <code>div</code> works fine though (See demo).</li>
+<li>[only non-IE]: Adds additional hidden element into selected target element and forces target element to be relative or absolute.</li>
+</ul>
+<p>Event-Based resize detection inspired by <a href="http://www.backalleycoder.com/2013/03/18/cross-browser-event-based-element-resize-detection/">backalleycoder.com</a> &lt;3</p>
+
+    </div>
+
+    <!-- todo: incorporate usemin -->
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="vendor/gsap/src/uncompressed/plugins/ScrollToPlugin.js"></script>
+    <script src="vendor/prefixfree/prefixfree.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

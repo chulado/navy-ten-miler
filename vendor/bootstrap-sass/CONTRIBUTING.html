@@ -19,8 +19,38 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="navigation" role="navigation">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Navy Ten Miler</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Purpose</a></li>
+        <li><a href="#">Course</a></li>
+        <li><a href="#">Registration</a></li>
+        <li><a href="#">Volunteers</a></li>
+        <li><a href="#">Apparel</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="btn btn-warning">Register Now</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
     
-    <h1>Contributing to Bootstrap</h1>
+    <div id="wrapper">
+      <h1>Contributing to Bootstrap</h1>
 <p>Looking to contribute something to Bootstrap? <strong>Here&#39;s how you can help.</strong></p>
 <h2>Reporting issues</h2>
 <p>We only accept issues that are bug reports or feature requests. Bugs must be isolated and reproducible problems that we can fix within the Bootstrap core. Please read the following guidelines before opening any issue.</p>
@@ -68,7 +98,12 @@
 <p>With v3.1, we&#39;re moving from the Apache 2 to the MIT license for the Bootstrap code (not the docs). We&#39;re in the process of collecting permissions from all Bootstrap contributors with code still part of the project to make this happen. For details, please see <a href="https://github.com/twbs/bootstrap/issues/2054">#2054</a>.</p>
 <p>By contributing your code, you agree to dual-license your contribution under the <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">Apache 2</a> and <a href="https://github.com/twbs/bootstrap/blob/master/MIT">MIT</a> licenses.</p>
 
+    </div>
 
+    <!-- todo: incorporate usemin -->
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="vendor/gsap/src/uncompressed/plugins/ScrollToPlugin.js"></script>
     <script src="vendor/prefixfree/prefixfree.min.js"></script>
     <script src="scripts/main.js"></script>
   </body>
