@@ -22,7 +22,7 @@
     top: 100%;
     margin-top: -14.8vw;
     //-webkit-transform-style: preserve-3d; 
-    //-webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     transform: skewY(-16.5deg);
 
     content: "";

@@ -15,5 +15,9 @@
   "dependencies": {
     "bootstrap-sass": "~3.0.2",
     "prefixfree": "*"
+  },
+  "devDependencies": {
+    "css-element-queries": "~0.0.1",
+    "gsap": "~1.12.1"
   }
 }
