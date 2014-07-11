@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navy Ten Miler</title>
+
+    <link href="styles/main.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="//use.typekit.net/tse4mee.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="navigation" role="navigation">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#thesis">Navy Ten Miler</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#purpose">Purpose</a></li>
+        <li><a href="#">Course</a></li>
+        <li><a href="#">Registration</a></li>
+        <li><a href="#">Volunteers</a></li>
+        <li><a href="#">Apparel</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="btn btn-warning">Register Now</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    
+    <div id="wrapper">
+      <h1>ScrollMagic <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=8BJC8B58XHKLL" title="Shut up and take my money!"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt="Donate" title="Shut up and take my money!"></a></h1>
+<h3>The jQuery plugin for magical scroll interactions.</h3>
+<p>ScrollMagic is a jQuery plugin which essentially lets you use the scrollbar like a playback scrub control.<br>It&#39;s the plugin for you, if you want to ...
+<em> ... start an animation at a specific scroll position.
+</em> ... synchronize an animation to the scrollbar movement.
+<em> ... pin an element at a specific scroll position (sticky elements).
+</em> ... pin an element for a limited amount of scroll progress (sticky elements).
+<em> ... easily add a parallax effect to your website.
+</em> ... create an inifinitely scrolling page (ajax load of additional content).
+* ... call functions when the user hits certain scroll positions or react in any other way to the current scroll position.</p>
+<p>Check out <a href="http://janpaepke.github.com/ScrollMagic">the demo page</a>, browse <a href="http://janpaepke.github.com/ScrollMagic/examples/index.html">the examples</a> or read <a href="http://janpaepke.github.com/ScrollMagic/docs/index.html">the documentation</a> to get started.</p>
+<h2>About the Plugin</h2>
+<p>ScrollMagic is a complete rewrite of its predecessor <a href="https://github.com/johnpolacek/superscrollorama">Superscrollorama</a> by <a href="http://johnpolacek.com">John Polacek</a>.<br>Like Superscrollorama it relies on the <a href="http://www.greensock.com/gsap-js/">Greensock Animation Platform (GSAP)</a> to build animations, but was developed with specific regard to former shortcomings.</p>
+<p>The major perks of using ScrollMagic include:
+<em> optimized performance
+</em> flexibility
+<em> mobile compatibility
+</em> ready for responsive webdesign
+<em> object oriented programming and object chaining
+</em> event management
+<em> support for both scroll directions (even different on one page)
+</em> support for scrolling inside div containers (even multiple on one page)
+* extensive debugging and logging capabilities</p>
+<h2>Installation</h2>
+<p>Aside from <a href="http://jquery.com/">jQuery</a> make sure you have loaded the <a href="http://www.greensock.com/gsap-js/">Greensock Animation Plattform (TweenMax)</a>.<br>To use ScrollMagic in your project simply include the plugin js file in the head section of your HTML file:</p>
+<pre><code class="language-html">&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.scrollmagic.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>For deployment use the minified version <strong>instead</strong>:</p>
+<pre><code class="language-html">&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.scrollmagic.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>And to have access to the debugging extension during development, include this file <strong>additionally</strong>:</p>
+<pre><code class="language-html">&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.scrollmagic.debug.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>You can remove the debugging extension for actual deployment.</p>
+<h2>Usage</h2>
+<pre><code class="language-javascript">// init controller
+var controller = new ScrollMagic();
+
+// assign handler &quot;scene&quot; and add it to Controller
+var scene = new ScrollScene({duration: 100})
+                .addTo(controller);
+
+// add multiple scenes at once
+var scene2;
+controller.addScene([
+    scene, // add above defined scene
+    scene2 = new ScrollScene({duration: 200}), // add scene and assign handler &quot;scene2&quot;
+    new ScrollScene({offset: 20}) // add anonymous scene
+]);</code></pre>
+<p>Check out the <a href="http://janpaepke.github.com/ScrollMagic/examples/index.html">examples</a> or the <a href="http://janpaepke.github.com/ScrollMagic/docs/index.html">documentation</a> for full reference.</p>
+<h2>Browser Support</h2>
+<p>ScrollMagic aims to support all major browsers in recent versions:<br>Firefox 26+, Chrome 30+, Safari 6+, Opera 19+, IE 9+</p>
+<h2>About the Author</h2>
+<p>I am a freelance Art Director based in Lausanne, Switzerland.<br>I started this project to intensify my knowledge of javascript.</p>
+<p><a href="http://www.janpaepke.de">Check out my website</a> or <a href="http://twitter.com/janpaepke">Follow me on Twitter</a></p>
+<h2>License</h2>
+<p>ScrollMagic is dual licensed under the MIT license and GPL.<br>For more information click <a href="https://github.com/janpaepke/ScrollMagic/blob/master/LICENSE.md">here</a>.<br>Click <a href="http://www.greensock.com/licensing/">here</a> to get more information on greensock licensing.</p>
+
+    </div>
+
+    <!-- todo: incorporate usemin -->
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="vendor/gsap/src/uncompressed/TimelineMax.js"></script>
+    <script src="vendor/gsap/src/uncompressed/plugins/ScrollToPlugin.js"></script>
+    <script src="vendor/ScrollMagic/js/jquery.scrollmagic.js"></script>
+    <script src="vendor/prefixfree/prefixfree.min.js"></script>
+    <script src="scripts/chrome-smooth.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
