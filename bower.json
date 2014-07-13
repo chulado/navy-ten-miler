@@ -14,10 +14,14 @@
   ],
   "dependencies": {
     "bootstrap-sass": "~3.0.2",
-    "prefixfree": "*"
+    "prefixfree": "*",
+    "ScrollMagic": "~1.0.8"
   },
   "devDependencies": {
     "css-element-queries": "~0.0.1",
+    "gsap": "~1.12.1"
+  },
+  "resolutions": {
     "gsap": "~1.12.1"
   }
 }

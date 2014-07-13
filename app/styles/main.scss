@@ -48,8 +48,10 @@ header {
 }
 
 #navigation {
+  z-index: 110;
   background: url(../images/navigation-bg.png) center;
   border: none;
+  transform: translate3d(0, 0, 10px);
 
   .navbar-brand {
     width: 105px;
@@ -112,6 +114,9 @@ header {
   background-position: 50% 90%;
   background-size: cover;
 
+  @media (min-width: 1300px) {
+    background-position: 50% 68%;
+  }
 
   @media (max-width: $screen-sm) {
     background-position: 10% 100%;
@@ -206,3 +211,5 @@ header {
     &.lead { color: #fff; font-weight: 600; font-family: $font-family-header-alt; }
   }
 }
+
+@import "parallax";

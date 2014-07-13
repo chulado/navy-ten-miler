@@ -89,20 +89,51 @@ $("a[href^=#]").click(function(e) {
 
 $(document).ready(function() {
 
+  if ($(window).width() > 768) {
 
-var controller = new ScrollMagic();
+    // insert parallax elements
+    $("#thesis").addClass("parallax-enabled").prepend('<div class="parallax-foreground"></div><div class="parallax-background"></div>');
+    $("#purpose").addClass("parallax-enabled").prepend('<div class="parallax-foreground"></div><div class="parallax-background"></div>');
 
-var sunsetTimeline = new TimelineMax().add([
-  TweenMax.fromTo(
-    "#thesis .parallax-background", 1,
-    {y: "-200%", z: "0.01px"},
-    {y: "300%", z: "0.01px", ease: Linear.easeNone}
-  ),
-  TweenMax.fromTo(
-    "#thesis .parallax-foreground", 1,
-    {y: "75%", z: "0.01px"},
-    {y: "350%", z: "0.01px", ease: Linear.easeNone}
-  )
-]);
-new ScrollScene({triggerElement: "#thesis", triggerHook: "onLeave", duration: $("#thesis").height()*1.5}).setTween(sunsetTimeline).addTo(controller);
+
+    var controller = new ScrollMagic();
+
+    var sunsetTimeline = new TimelineMax().add([
+      TweenMax.fromTo(
+        "#thesis.parallax-enabled .parallax-background", 1,
+        {y: "0", z: "0.01px"},
+        {y: "600%", z: "0.01px", ease: Linear.easeNone}
+      ),
+      TweenMax.fromTo(
+        "#thesis.parallax-enabled .parallax-foreground", 1,
+        {y: "50%", z: "0.01px"},
+        {y: "300%", z: "0.01px", ease: Linear.easeNone}
+      )
+    ]);
+    new ScrollScene({triggerElement: "#thesis", triggerHook: "onLeave", duration: $("#thesis").height()*1.5}).setTween(sunsetTimeline).addTo(controller);
+
+
+    var railsTimeline = new TimelineMax().add([
+      TweenMax.fromTo(
+        "#purpose.parallax-enabled .parallax-background", 1,
+        {y: "-400%", z: "0.01px"},
+        {y: "300%", z: "0.01px", ease: Linear.easeNone}
+      ),
+      TweenMax.fromTo(
+        "#purpose.parallax-enabled .parallax-foreground", 1,
+        {y: "-200%", z: "0.01px"},
+        {y: "200%", z: "0.01px", ease: Linear.easeNone}
+      )
+      ,
+      TweenMax.fromTo(
+        "#purpose.parallax-enabled header", 1,
+        {y: "-120%", z: "0.01px"},
+        {y: "000%", z: "0.01px", ease: Linear.easeNone}
+      )
+    ]);
+    new ScrollScene({triggerElement: "#purpose", triggerHook: "onEnter", duration: $(window).height()*1.75}).setTween(railsTimeline).addTo(controller);
+
+
+  }
+
 });
