@@ -116,8 +116,8 @@ $(document).ready(function() {
     var railsTimeline = new TimelineMax().add([
       TweenMax.fromTo(
         "#purpose.parallax-enabled .parallax-background", 1,
-        {y: "-400%", z: "0.01px"},
-        {y: "300%", z: "0.01px", ease: Linear.easeNone}
+        {y: "-350%", z: "0.01px"},
+        {y: "350%", z: "0.01px", ease: Linear.easeNone}
       ),
       TweenMax.fromTo(
         "#purpose.parallax-enabled .parallax-foreground", 1,
