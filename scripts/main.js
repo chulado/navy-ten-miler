@@ -94,7 +94,7 @@ $(document).ready(function() {
     // insert parallax elements
     $("#thesis").addClass("parallax-enabled").prepend('<div class="parallax-foreground"></div><div class="parallax-background"></div>');
     $("#purpose").addClass("parallax-enabled").prepend('<div class="parallax-foreground"></div><div class="parallax-background"></div>');
-
+    $("#course").addClass("parallax-enabled").prepend('<div class="parallax-background"></div>');
 
     var controller = new ScrollMagic();
 
@@ -134,6 +134,51 @@ $(document).ready(function() {
     new ScrollScene({triggerElement: "#purpose", triggerHook: "onEnter", duration: $(window).height()*1.75}).setTween(railsTimeline).addTo(controller);
 
 
+
+    var mapTimeline = new TimelineMax().add([
+      TweenMax.fromTo(
+        "#course.parallax-enabled .parallax-background", 1,
+        {y: "-350%", z: "0.01px"},
+        {y: "350%", z: "0.01px", ease: Linear.easeNone}
+      )
+    ]);
+    new ScrollScene({triggerElement: "#course", triggerHook: "onEnter", duration: $("#course").height()*1.75}).setTween(mapTimeline).addTo(controller);
+
+
+    var trophyTimeline = new TimelineMax().add([
+      TweenMax.fromTo(
+        "#award .swag-grid .photoset-row img", 1,
+        {y: "-350%", z: "0.01px"},
+        {y: "350%", z: "0.01px", ease: Linear.easeNone}
+      )
+    ]);
+    new ScrollScene({triggerElement: "#award", triggerHook: "onEnter", duration: $(window).height()*1.75}).setTween(trophyTimeline).addTo(controller);
+
   }
+
+
+  // grid
+  // $('.swag-grid').photosetGrid({
+  //   gutter: "2px",
+  //   onComplete: function() {
+  //     $(".swag-grid .photoset-cell img").each(function(){
+  //       $this = $(this);
+  //       var caption = $this.attr("data-caption");
+  //       var div = $("<div>");
+
+  //       div.css({height: Math.round($this.parents(".photoset-row").outerHeight()/2)*2+"px"});
+        
+
+  //       div.addClass("caption").html("<p>"+caption+"</p>");
+  //       $this.after(div); //.after("<div class=\"arrowed-up arrowed-dark\">");
+  //     });
+
+  //     $(window).resize(function(){
+  //       $(".swag-grid .photoset-cell .caption").each(function(){
+  //         $(this).css({height: Math.round($(this).parents(".photoset-row").outerHeight()/2)*2+"px"});
+  //       });
+  //     });
+  //   }
+  // });
 
 });
