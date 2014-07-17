@@ -15,7 +15,9 @@
   "dependencies": {
     "bootstrap-sass": "~3.0.2",
     "prefixfree": "*",
-    "ScrollMagic": "~1.0.8"
+    "ScrollMagic": "~1.0.8",
+    "font-awesome": "~4.1.0",
+    "photoset-grid": "*"
   },
   "devDependencies": {
     "css-element-queries": "~0.0.1",

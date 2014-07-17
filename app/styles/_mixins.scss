@@ -31,6 +31,7 @@
   }
 }
 
+
 .arrowed-up {
   padding-top: 13.8vw;
 
@@ -64,6 +65,22 @@
   }
 }
 
+.arrowed-down-top {
+  @extend .arrowed-up;
+  &:before {
+    margin-bottom: 0;
+    right: auto;
+    left: 50%;
+    transform: skewY(-16.5deg);
+  }
+  &:after {
+    margin-bottom: 0;
+    left: auto;
+    right: 50%;
+    transform: skewY(16.5deg);
+  }
+}
+
 .arrowed-dualing {
   div {
     overflow: hidden;
@@ -78,6 +95,8 @@
   clear: both;
   overflow: hidden;
 }
+
+
 
 .arrowed-long-left {
   padding-bottom: 24.8vw;
@@ -98,10 +117,35 @@
   }
 }
 
+.arrowed-long-right {
+  padding-bottom: 24.8vw;
+
+  &:after {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    margin-bottom: -14.8vw;
+    //-webkit-transform-style: preserve-3d; 
+    //-webkit-backface-visibility: hidden;
+    transform: skewY(-16.5deg);
+    z-index: 100;
+    content: "";
+  }
+}
+
+
 .arrowed-dark { 
   &:before, &:after { background: url(../images/pattern-dark.jpg); }
 }
 
 .arrowed-light { 
   &:before, &:after { background: url(../images/pattern-light.jpg); }
+}
+
+
+.arrowed-white { 
+  &:before, &:after { background: white; }
 }
