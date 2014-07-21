@@ -336,12 +336,110 @@ header {
 }
 
 #swag {
-  .container { min-height: 0; padding-bottom: 8%; }
+  .container { min-height: 0; padding-bottom: 0; }
+
+  
 }
 
 #prices {
   background: url("../images/60S.jpg") no-repeat center;
   background-size: cover;
+}
+
+.price-table {
+  margin-top: 5%;
+  @include make-row();
+}
+
+.price-table-col {
+  @include make-sm-column(6);
+
+  font-size: 1.4em;
+  header {
+    border-bottom: none;
+    text-align: left;
+    font-size: 1.6em;
+    strong {
+      display: block;
+      @extend h3;
+      color: black;
+      margin: 0;
+      margin-top: 2%;
+    }
+  }
+  .price-table-col-body {
+    padding-top: 0;
+    background: #f5f5f5;
+  }
+}
+
+.prices {
+  padding-top: 5%;
+  @include make-row;
+
+  .bracket, .retail {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: $brand-primary;
+    text-transform: uppercase;
+  }
+
+  .bracket {
+    @include make-sm-column(4);
+
+    @media(min-width: $screen-md) {
+      &:nth-of-type(2) { text-align: right; }
+      &:nth-of-type(4) { text-align: left; }
+    }
+  }
+
+  .discount {
+    @extend small;
+    font-weight: normal;
+    opacity: 0.8;
+  }
+
+  .retail {
+    clear: both;
+    color: $gray-light;
+    font-weight: 100;
+  }
+}
+
+#volunteers {
+  background: url(../images/pattern-dark.jpg);
+
+  .container {
+    min-height: 0;
+    p { color: $gray-light; }
+  }
+}
+
+#partners {
+  background: url(../images/pattern-light.jpg);
+  padding-top: 5%;
+
+  .container {
+    min-height: 0;
+  }
+
+  .partner {
+    font-size: 1.7em;
+    text-align: center;
+  }
+  img { width: 100%; max-width: 200px; margin-top: 5%;}
+}
+
+#footer {
+  background: url(../images/pattern-light.jpg);
+  .container {
+    min-height: 0;
+  }
+
+  hr {
+    border-color: $gray-lighter;
+  }
 }
 
 @import "parallax";
