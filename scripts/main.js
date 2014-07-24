@@ -96,6 +96,8 @@ $(document).ready(function() {
     $("#purpose").addClass("parallax-enabled").prepend('<div class="parallax-foreground"></div><div class="parallax-background"></div>');
     $("#course").addClass("parallax-enabled").prepend('<div class="parallax-background"></div>');
 
+    $("#prices").addClass("parallax-enabled").prepend('<div class="parallax-helicopter"></div><div class="parallax-ship"></div><div class="parallax-background"></div>');
+
     var controller = new ScrollMagic();
 
     var sunsetTimeline = new TimelineMax().add([
@@ -153,6 +155,25 @@ $(document).ready(function() {
       )
     ]);
     new ScrollScene({triggerElement: "#award", triggerHook: "onEnter", duration: $(window).height()*1.75}).setTween(trophyTimeline).addTo(controller);
+
+    var landingTimeline = new TimelineMax().add([
+      TweenMax.fromTo(
+        "#prices.parallax-enabled .parallax-background", 1,
+        {y: "-500%", z: "0.01px"},
+        {y: "500%", z: "0.01px", ease: Linear.easeNone}
+      ),
+      TweenMax.fromTo(
+        "#prices.parallax-enabled .parallax-helicopter", 1,
+        {y: "-250%", z: "0.01px"},
+        {y: "350%", z: "0.01px", ease: Linear.easeNone}
+      ),
+      TweenMax.fromTo(
+        "#prices.parallax-enabled .parallax-ship", 1,
+        {y: "-50%", z: "0.01px"},
+        {y: "100%", z: "0.01px", ease: Linear.easeNone}
+      )
+    ]);
+    new ScrollScene({triggerElement: "#prices", triggerHook: "onEnter", duration: $("#prices").height()+$(window).height()}).setTween(landingTimeline).addTo(controller);
 
   }
 
