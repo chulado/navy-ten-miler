@@ -97,6 +97,21 @@ header {
   }
 }
 
+.navbar-register-mobile {
+  display: none;
+
+  @media (max-width: $screen-sm) {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+
+    a { width: 100%; }
+  }
+}
+
 .tris {
   width: 5vw;
   height: 2.5vw;
@@ -439,6 +454,21 @@ header {
 
   hr {
     border-color: $gray-lighter;
+  }
+}
+
+#footer {
+  padding-top: 2%;
+  text-align: center;
+
+  .facebook {
+    height: 21px !important;
+  }
+
+  .copyright {
+    font-size: 1.5em;
+    padding-top: 1%;
+    padding-bottom: 2%;
   }
 }
 

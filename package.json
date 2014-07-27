@@ -6,7 +6,12 @@
   "dependencies": {
     "grunt": "~0.4.5",
     "grunt-deploy": "~0.1.7",
-    "harp": "~0.12.1"
+    "harp": "~0.12.1",
+    "which": "*",
+    "esprima": "*",
+    "rimraf": "*",
+    "minimatch": "*",
+    "nopt":"*"
   },
   "devDependencies": {
     "component": "^0.19.9",
