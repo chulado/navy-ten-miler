@@ -1,1 +1,1 @@
-harp compile app -o ../tmp/dist && grunt gh-pages & rmdir tmp /s /q & PAUSE
+harp compile app -o ../dist && grunt build && grunt gh-pages & rmdir dist /s /q & PAUSE

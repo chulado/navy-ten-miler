@@ -16,6 +16,9 @@ app/vendor
 tmp
 tmp/*
 tmp/**/*
+.tmp
+.tmp/*
+.tmp/**/*
 
 source-art
 source-art/*
