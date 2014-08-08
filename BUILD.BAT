@@ -1,1 +1,1 @@
-harp compile app -o ../dist && grunt build
+harp compile app -o ../dist && grunt build & PAUSE
