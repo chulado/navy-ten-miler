@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navy Ten Miler</title>
+
+    <!-- build:css styles/main.css -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- endbuild -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="//use.typekit.net/tse4mee.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="navigation" role="navigation">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#thesis">Navy Ten Miler</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#purpose">Our Mission</a></li>
+        <li><a href="#course">The Course</a></li>
+        <li><a href="#participants">Participants</a></li>
+        <li><a href="#volunteers">Training</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="btn btn-warning">Register Now</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="navbar-register-mobile">
+  <a href="#" class="btn btn-warning">Register Now</a>
+</div>
+    
+    <div id="wrapper">
+      <h1>Support Guidelines</h1>
+<p>Got stuck with your ScrollMagic page and don&#39;t know what went wrong?<br>We&#39;d love to help you, but before posting an issue please follow these steps and in most cases you will be able to figure it out yourself.</p>
+<h2>1. Make sure your console is clean.</h2>
+<p>ScrollMagic posts a lot of useful debugging information to the console of your browser.
+So make sure to check it first, when looking for the problem.<br>In Chrome the console is opened by clicking &quot;View -&gt; Developer -&gt; JavaScript console&quot;.</p>
+<p>If no errors appear make use of ScrollMagic&#39;s debugging capabilities.
+Both the <a href="http://janpaepke.github.io/ScrollMagic/docs/ScrollMagic.html#ScrollMagic">controller class</a> as well as the <a href="http://janpaepke.github.io/ScrollMagic/docs/ScrollScene.html#ScrollScene">scene class</a> offer the <code>loglevel</code> option, which, when set to 3, will output even more useful information.<br>Does the controller update, when you scroll?<br>Is your scene object behaving correctly?</p>
+<h2>2. The tweens don&#39;t work?</h2>
+<h3>2.1 Make sure they are happening at the correct scroll position</h3>
+<p>Many times the reason you don&#39;t see your tweens is because they are happening outside of the viewport. Either before you scrolled past the element you are animating, or after.</p>
+<p>An easy way to make sure is to add visual help by including the ScrollMagic debugging extension.<br>Simply add the file reference into your html like this:</p>
+<pre><code class="language-html">&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.scrollmagic.debug.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>Then use <code>scene.addIndicators()</code> to get visual indicators for where your scene should start and stop.</p>
+<p>If you are sure that the scene is triggering when you want it to and the item is in view, then please...</p>
+<h3>2.1 Make sure the problem is with ScrollMagic, not with TweenMax</h3>
+<p>With most tween-related problems the issue lies with CSS, TweenMax or a misuse thereof.<br>For example a common mistake is that the selector for TweenMax turns up empty.</p>
+<p>A best practice is usually to create your tweens but <strong>do not</strong> add them to the ScrollScene object using <code>setTween</code>.
+Now look at your site and see if the animation plays out the way you wanted to.<br>If it doesn&#39;t the problem is obviously not with ScrollMagic.</p>
+<p>Check out the <a href="http://www.greensock.com/forums/forum/11-gsap/">Greensock Forums</a> to get help using TweenMax.</p>
+<p>Only once the animation plays like you want it to add it to the ScrollScene.</p>
+<p><em><strong>Hint:</strong> If your animation is further down in the DOM and you can&#39;t reach it before it plays, make use of the <code>delay</code> option of TweenMax. Just don&#39;t forget to remove it once everything animates like you want it to.</em></p>
+<h2>3. Isolate the problem</h2>
+<p>A lot of times problems are caused by other elements or overlapping scenes on the page. Try to make a seperate test-page containing only the respective scene. This will also help you with step 5 (posting the issue).</p>
+<h2>4. Search for similar issues</h2>
+<p>Chances are someone already ran across something similar to what you are experiencing.
+Make sure to use the <a href="https://github.com/janpaepke/ScrollMagic/search">GitHub search</a> at the top of the page to find out.</p>
+<h2>5. Post your question in the issues section</h2>
+<p>Once you completed steps 1 to 4 and still can&#39;t figure it out, you are welcome to post your question <a href="https://github.com/janpaepke/ScrollMagic/issues">in the issues section</a>. We&#39;ll be happy to help you with your problem.<br>But in order for us to be able to do that and also for future users to benefit from the solution we ask you to abide by these rules:
+ - <strong>Focus</strong>: Only one issue per post, please.
+ - <strong>Caption</strong>: Try to find a title that help other people to see what the post is about and avoid titles like &quot;Problem with Scrolling&quot; that really won&#39;t help anyone...
+ - <strong>Description</strong>: Try to describe your problem as simple as possible and always keep in mind that the people reading it have no idea of your project and it&#39;s parameters. How would you explain it to someone who doesn&#39;t even know ScrollMagic?
+ - <strong>Format</strong>: Use Paragraphs and structure your text using all the great features of <a href="https://help.github.com/articles/github-flavored-markdown">GitHub markdown</a>. pay special attention to the tripple ticks (```) followed by a language name to ensure <a href="https://help.github.com/articles/github-flavored-markdown#syntax-highlighting">syntax highlighting</a>.
+ - <strong>Code</strong>: In almost all cases help can only be provided if the question is accompanied by the respective code. The VERY best way to do this is using <a href="http://jsfiddle.net/">jsfiddle</a>, <a href="http://codepen.io/">codepen</a> or <a href="http://plnkr.co/edit">Plunker</a>. It provides an isolated showcase of the issue (which you already created in Step 3) and gives everyone else the opportunity to play around with the code to find out the problem. If feel you HAVE to post a link to your own environment, please make sure it&#39;s a special URL and try to keep it live even after development has finished. This way it will be available for future users with the same problem.</p>
+<p>Thank you for helping me maintain this project by abiding by these rules.</p>
+<p><strong>For Github issues please avoid</strong>:
+- Hitting reply in the GitHub notification email and leaving the original message in. If you love to use the direct email reply feature, please make sure to delete the original.
+- Posting links to your website and removing them after the issue is solved. This takes away the possibility to learn for future users.</p>
+<hr>
+<h1>Development Contribution</h1>
+<p>You want to dig into the source code of ScrollMagic and maybe even contribute? Awesome!<br>Make sure you have <a href="http://nodejs.org">node.js</a> installed and running on your system.<br>To find out just open your Console (MacOsX Terminal) and type <code>node -v</code>.</p>
+<h2>Directory Structure</h2>
+<ul>
+<li><code>/dev</code> base folder of the development environment<ul>
+<li><code>/dev/docs</code> contains configuration and template files for the docs generation</li>
+<li><code>/dev/src</code> all the ScrollMagic source files</li>
+<li><code>/dev/tests</code> testing environment<ul>
+<li><code>/dev/tests/fixtures</code> html files for usage in tests</li>
+<li><code>/dev/tests/spec</code> contains all the spec files written in <a href="http://jasmine.github.io">jasemine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Prepare Development environment</h2>
+<p>Open your console and navigate to the ScrollMagic directory. Then change to the dev directory.</p>
+<pre><code class="language-Shell">$ cd dev</code></pre>
+<p>To install all necessary components we use the <b>n</b>ode <b>p</b>ackage <b>m</b>anager (comes with node).</p>
+<pre><code class="language-Shell">$ npm install</code></pre>
+<p>Now watch the magic happen and once it&#39;s done so are you. You are ready to start building and testing.</p>
+<h2>Build ScrollMagic</h2>
+<p>For clarity reasons the ScrollMagic source files are split up and can be found in <code>/dev/src</code>.
+To combine all source files and store them in their correct location we need to run the build.js file from node.<br>The build process also automatically checks for javascript errors and minifies the main file.
+This is achieved by calling:</p>
+<pre><code class="language-Shell">$ node build</code></pre>
+<p>You can pass in various arguments to customize the build:</p>
+<pre><code>     -v=VERSION    | alias: -version
+     Update Version number
+     example: node build -v=1.0.4
+
+     -o=DIR            | alias: -out=DIR
+     Define output directory. If not supplied the default directory &#39;/js&#39; will be used.
+     example: node build -o=tmp
+
+     -d=[DIR]        | alias: -docs=[DIR]
+     Flag to also update the docs. If no directory is provided the default output directory &#39;/docs&#39; will be used.
+     example: node build -d</code></pre>
+<p>So in most cases your build command will look like this:</p>
+<pre><code class="language-Shell">$ node build -v=1.0.10 -d</code></pre>
+<p>This will update the version to 1.0.10 and also generate new docs.</p>
+<h2>Test ScrollMagic</h2>
+<p>ScrollMagic comes with a test suite that makes sure that everything works as expected after changing the source code.
+<strong>NOTE</strong>: For now only few features are speced out. More tests will follow in due time.<br>To run tests call:</p>
+<pre><code class="language-Shell">$ npm test</code></pre>
+<p><em>Tip:</em> In case you don&#39;t know – to quit the process use ctrl+c.</p>
+<p>When you added a new feature to ScrollMagic be sure to write a new test for it, if you are able to.<br>You&#39;ll find a stub spec file here: <code>dev/tests/spec/_spec.sample.js</code>.</p>
+
+    </div>
+
+    <div id="footer">
+  <div class="container">
+    <div class="share-buttons">
+      <a href="https://twitter.com/conrad_vanl" class="twitter-follow-button" data-show-count="false">Follow @conrad_vanl</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+      <a href="https://twitter.com/intent/tweet?button_hashtag=TwitterStories" class="twitter-hashtag-button" data-related="conrad_vanl">Tweet #TwitterStories</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+      <iframe class="facebook" src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35&amp;appId=216969041847442" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
+    </div>
+
+    <div class="copyright">
+      Not Affiliated with the US Government.<br>
+      A RunNavy Production.<br>
+      &copy; 2014 Navy Ten-Miler, LLC. All Rights Reserved.
+    </div>
+  </div>
+</div>
+
+    <!-- build:js scripts/main.js -->
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="vendor/gsap/src/uncompressed/TimelineMax.js"></script>
+    <script src="vendor/gsap/src/uncompressed/plugins/ScrollToPlugin.js"></script>
+    <script src="vendor/ScrollMagic/js/jquery.scrollmagic.js"></script>
+    <script src="vendor/prefixfree/prefixfree.min.js"></script>
+    <script src="vendor/bootstrap-sass/js/transition.js"></script>
+    <script src="vendor/bootstrap-sass/js/dropdown.js"></script>
+    <script src="vendor/bootstrap-sass/js/button.js"></script>
+    <script src="vendor/bootstrap-sass/js/collapse.js"></script>
+    <script src="scripts/chrome-smooth.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
