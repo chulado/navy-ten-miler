@@ -138,6 +138,10 @@ header {
   }
 }
 
+.hero-copy h3 {
+  color:#fff;
+}
+
 #thesis {
   background: url(../images/sunset-ship.jpg) no-repeat;
   background-position: 50% 90%;
@@ -437,6 +441,12 @@ header {
 
   .container {
     min-height: 0;
+  }
+
+  .container  h3 {
+    text-align: center;
+    font-size: 3em;
+    margin: 0 0 65px 0;
   }
 
   .partner {
