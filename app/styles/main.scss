@@ -435,9 +435,33 @@ header {
   }
 }
 
+#partners h3 {
+  color: #eee;
+}
+
+#partners h3:before,
+#partners h3:after {
+    background-color: #eee;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 35%;
+}
+#partners h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+#partners h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+
 #partners {
   background-color: #2d9fd1;
-  padding-top: 5%;
+  padding-top: 3%;
 
   .container {
     min-height: 0;
@@ -457,18 +481,18 @@ header {
 }
 
 #footer {
-  background: url(../images/pattern-light.jpg);
+  background-color: #2d9fd1;
   .container {
     min-height: 0;
   }
 
-  hr {
+  /*hr {
     border-color: $gray-lighter;
-  }
+  }*/
 }
 
 #footer {
-  padding-top: 2%;
+  padding-top: 5%;
   text-align: center;
 
   .facebook {
@@ -479,6 +503,10 @@ header {
     font-size: 1.5em;
     padding-top: 1%;
     padding-bottom: 2%;
+    color:#dedede;
+  }
+    .copyright a {
+    color:#dedede;
   }
 }
 
