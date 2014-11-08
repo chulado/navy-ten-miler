@@ -131,13 +131,14 @@ header {
 
 .hero-copy {
   font-size: 22px;
-  font-size: 1.5vw;
+  font-size: 1.7vw;
   font-weight: 400;
 
   @media (max-width: $screen-md) {
     font-size: 14px;
   }
 }
+
 
 .hero-copy h3 {
   color:#fff;
