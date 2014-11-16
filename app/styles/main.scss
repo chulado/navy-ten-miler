@@ -511,6 +511,9 @@ header {
     text-align: center;
     @include make-xs-column(2.4);
   }
+  .partner p {
+    color:#f1f1f1;
+  }
   img { width: 100%; max-width: 125px; margin-top: 5%;}
 }
 
