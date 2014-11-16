@@ -16,12 +16,15 @@ $brand-warning: $brand-yellow;
 
 $fa-font-path:        "../vendor/font-awesome/fonts";
 
+$screen-md: 1043px;
+
 @import "../vendor/bootstrap-sass/lib/bootstrap";
 @import "../vendor/font-awesome/scss/font-awesome";
 
 @import "mixins";
 @import "buttons";
 @import "typography";
+@import "countdown";
 
 body, html {
   height: 100%;
@@ -76,13 +79,28 @@ header {
     box-sizing: content-box;
   }
 
+  @media(min-width: $screen-lg) {
+    .navbar-brand {
+      height: 83px;
+    }
+    .navbar-nav {
+      margin-top: -29px;
+      margin-left: -15px;
+    }
+  }
+
+
   a {
     font-family: $font-family-body;
     text-transform: uppercase;
     color: #bababa;
-    font-size: 1.5em;
+    font-size: 1.7em;
     padding: 30px 15px 20px;
     @include transition(color $transition);
+
+    @media(min-width: $screen-lg) {
+      padding-top: 10px;
+    }
 
     &:hover { color: #fff; }
   }
@@ -94,13 +112,25 @@ header {
   .btn {
     padding: 8px 25px;
     margin: 20px 30px;
+    font-weight: 900;
+    font-size: 1.7em;
+    min-width: 214px;
+
+    @media(min-width: $screen-lg) {
+      margin-top: 19px;
+      margin-bottom: 15px;
+    }
+
+    @media(max-width: $screen-md) {
+      display: none;
+    }
   }
 }
 
 .navbar-register-mobile {
   display: none;
 
-  @media (max-width: $screen-sm) {
+  @media (max-width: $screen-md) {
     display: block;
     position: fixed;
     bottom: 0;

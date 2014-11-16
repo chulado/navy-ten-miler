@@ -16,51 +16,55 @@
   position: relative;
   border: none;
   font-weight: bold;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), inset 0 1px 0 rgba(255,255,255,0.5);
 
-  &:after {
-    content: "";
-    position: absolute;
-    right: -13px;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-top: 18px solid transparent;
-    border-left: 13px solid $brand-yellow;
-    border-bottom: 18px solid transparent;
-  } 
 
-  &:before {
-    content: "";
-    position: absolute;
-    left: -13px;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 18px solid transparent;
-    border-right: 13px solid $brand-yellow;
-    border-top: 18px solid transparent;
-  } 
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   right: -13px;
+  //   bottom: 0;
+  //   width: 0;
+  //   height: 0;
+  //   border-top: 18px solid transparent;
+  //   border-left: 13px solid $brand-yellow;
+  //   border-bottom: 18px solid transparent;
+  // } 
+
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   left: -13px;
+  //   bottom: 0;
+  //   width: 0;
+  //   height: 0;
+  //   border-bottom: 18px solid transparent;
+  //   border-right: 13px solid $brand-yellow;
+  //   border-top: 18px solid transparent;
+  // } 
 
   &:hover {
     color: black !important;
     background-color: $brand-yellow-lighter !important;
-    &:after {
-      border-left-color: $brand-yellow-lighter;
-    }
-    &:before {
-      border-right-color: $brand-yellow-lighter;
-    }
+    // &:after {
+    //   border-left-color: $brand-yellow-lighter;
+    // }
+    // &:before {
+    //   border-right-color: $brand-yellow-lighter;
+    // }
   }
 
   &:focus, &:active {
     box-shadow: none !important;
     background-color: $brand-yellow-darker !important;
-    &:after {
-      border-left-color: $brand-yellow-darker;
-    }
-    &:before {
-      border-right-color: $brand-yellow-darker;
-    }
+    box-shadow: inset 0 5px 10px 0 rgba(0,0,0,0.4) !important;
+    // &:after {
+    //   border-left-color: $brand-yellow-darker;
+    // }
+    // &:before {
+    //   border-right-color: $brand-yellow-darker;
+    // }
   }
 
 }
