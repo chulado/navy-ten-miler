@@ -136,25 +136,27 @@
       z-index: 0;
     }
   }
-}
 
-#course {
-  background: none;
-  position: relative;
-  .parallax-background {
-    background: #2d9fd1 url(../images/map.jpg) no-repeat center top;
-    background-size: 100% auto;
+  #course {
+    background: none;
+    position: relative;
+    .parallax-background {
+      background: #2d9fd1 url(../images/map.jpg) no-repeat center top;
+      background-size: 100% auto;
 
-    padding: 0;
-    height: auto;
+      padding: 0;
+      height: auto;
 
-    position: absolute
-;    left: 0;
-    right: 0;
-    z-index: 0;
-    bottom: 0%;
-    top: 0%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 0;
+      bottom: 0%;
+      top: 0%;
+    }
   }
+
 }
+
 
 .no-flick{ -webkit-transform-style: preserve-3d; }

@@ -306,19 +306,34 @@ header {
     overflow: hidden;
     height: 60vw;
 
+    @media(max-width: $screen-sm) {
+      height: 120vw;
+    }
+
     img {
       width: 100%;
+
+      @media(max-width: $screen-sm) {
+        height: 100%;
+        width: auto;
+      }
     }
 
     .caption {
       position: absolute;
       top: 0;
+      width: 100%;
+      
+      text-align: center;
       left: 0;
       right: 0;
       bottom: 0;
       background: rgba(64, 172, 212, 0.1); //rgba(255,199,6,0.5);
       transition: background $transition;
       padding: 0 5%;
+      padding-top: 30%;
+
+
 
       p {
         padding: 0;
@@ -326,10 +341,10 @@ header {
         @extend h3;
         text-align: center;
         color: #fff;
-        position: absolute;
-        bottom: 20%;
-        left: 0;
-        right: 0;
+        // position: absolute;
+        // bottom: 20%;
+        // left: 0;
+        // right: 0;
         font-family: $font-family-header;
         text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 
@@ -342,7 +357,13 @@ header {
           font-family: $font-family-header-alt;
         }
       }
+
+      @media(max-width: $screen-sm) {
+        p { font-size: 18px; line-height: 20px; }
+      }
+
     }
+
 
 
     &:last-child .caption { right: 0; }
@@ -354,6 +375,7 @@ header {
   .arrowed-long-right { padding-bottom: 0; }
 
   .arrowed-white {}
+
 }
 
 
@@ -515,12 +537,20 @@ header {
     color:#f1f1f1;
   }
   img { width: 100%; max-width: 125px; margin-top: 5%;}
+
+  @media(max-width: $screen-sm) {
+    .container { padding-top: 25px;}
+  }
 }
 
 #footer {
   background-color: #2d9fd1;
   .container {
     min-height: 0;
+  }
+
+  @media(max-width: $screen-sm) {
+    .container { padding-bottom: 35px;}
   }
 
   /*hr {
