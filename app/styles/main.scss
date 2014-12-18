@@ -536,7 +536,10 @@ header {
   .partner p {
     color:#f1f1f1;
   }
-  img { width: 100%; max-width: 125px; margin-top: 5%;}
+  img { width: 100%; max-width: 125px; margin-top: 5%; display: block;
+margin: auto;
+margin-bottom: 30px;
+margin-top: 15px;}
 
   @media(max-width: $screen-sm) {
     .container { padding-top: 25px;}
