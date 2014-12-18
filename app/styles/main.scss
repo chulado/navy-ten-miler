@@ -531,7 +531,7 @@ header {
   .partner {
     font-size: 1.7em;
     text-align: center;
-    @include make-xs-column(2.4);
+    @include make-sm-column(2.4);
   }
   .partner p {
     color:#f1f1f1;
