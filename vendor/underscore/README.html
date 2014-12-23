@@ -70,59 +70,24 @@
 </div>
     
     <div id="wrapper">
-      <h1>CSS Element Queries</h1>
-<p>Element Queries is a polyfill adding support for element based media-queries to all new browsers (incl. IE8+).
-It allows not only to define media-queries based on window-size but also adds &#39;media-queries&#39; functionality depending on element (any selector supported)
-size while not causing performance lags due to event based implementation.</p>
-<p>It&#39;s a proof-of-concept event-based CSS element dimension query with valid CSS selector syntax.</p>
-<p>Features:</p>
-<ul>
-<li>no performance issues</li>
-<li>no interval/timeout detection. Truly event-based</li>
-<li>no CSS modifications. Valid CSS Syntax</li>
-<li>all CSS selectors available. Uses regular attribute selector</li>
-<li>supports and tested in webkit, gecko and IE(8/9/10).</li>
-<li><code>min-width</code>, <code>min-height</code>, <code>max-width</code> and <code>max-height</code> are supported so far</li>
-<li>works with any layout modifications: HTML (innerHTML etc), inline styles, DOM mutation, CSS3 transitions, fluid layout changes (also percent changes), pseudo classes (:hover etc.), window resizes and more</li>
-<li>no Javascript-Framework dependency (works with jQuery, Mootools, etc.)</li>
-</ul>
-<p>More demos and information: <a href="http://marcj.github.io/css-element-queries/">http://marcj.github.io/css-element-queries/</a></p>
-<h2>Example</h2>
-<pre><code class="language-css">.widget-name {
-    padding: 25px;
-}
-.widget-name[max-width=&quot;200px&quot;] {
-    padding: 0;
-}
-.widget-name[min-width=&quot;500px&quot;] {
-    padding: 55px;
-}
-
-/* responsive images /*
-.responsive-image img {
-    width: 100%;
-}
-
-.responsive-image[max-width^=&#39;400px&#39;] img {
-    content: url(demo/image-400px.jpg);
-}
-
-.responsive-image[max-width^=&#39;1000px&#39;] img {
-    content: url(demo/image-1000px.jpg);
-}
-
-.responsive-image[min-width=&#39;1000px&#39;] img {
-    content: url(demo/image-full.jpg);
-}</code></pre>
-<p>Include the javascript files at the bottom and you&#39;re good to go. No custom javascript calls needed.</p>
-<pre><code class="language-html">&lt;script src=&quot;src/ResizeSensor.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;src/ElementQueries.js&quot;&gt;&lt;/script&gt;</code></pre>
-<h2>Issues</h2>
-<ul>
-<li>So far does not work on <code>img</code> tags. Wrapping with a <code>div</code> works fine though (See demo).</li>
-<li>[only non-IE]: Adds additional hidden element into selected target element and forces target element to be relative or absolute.</li>
-</ul>
-<p>Event-Based resize detection inspired by <a href="http://www.backalleycoder.com/2013/03/18/cross-browser-event-based-element-resize-detection/">backalleycoder.com</a> &lt;3</p>
+      <pre><code>                   __
+                  /\ \                                                         __
+ __  __    ___    \_\ \     __   _ __   ____    ___    ___   _ __    __       /\_\    ____
+/\ \/\ \ /&#39; _ `\  /&#39;_  \  /&#39;__`\/\  __\/ ,__\  / ___\ / __`\/\  __\/&#39;__`\     \/\ \  /&#39;,__\
+\ \ \_\ \/\ \/\ \/\ \ \ \/\  __/\ \ \//\__, `\/\ \__//\ \ \ \ \ \//\  __/  __  \ \ \/\__, `\
+ \ \____/\ \_\ \_\ \___,_\ \____\\ \_\\/\____/\ \____\ \____/\ \_\\ \____\/\_\ _\ \ \/\____/
+  \/___/  \/_/\/_/\/__,_ /\/____/ \/_/ \/___/  \/____/\/___/  \/_/ \/____/\/_//\ \_\ \/___/
+                                                                              \ \____/
+                                                                               \/___/</code></pre>
+<p>Underscore.js is a utility-belt library for JavaScript that provides
+support for the usual functional suspects (each, map, reduce, filter...)
+without extending any core JavaScript objects.</p>
+<p>For Docs, License, Tests, and pre-packed downloads, see:
+<a href="http://underscorejs.org">http://underscorejs.org</a></p>
+<p>Underscore is an open-sourced component of DocumentCloud:
+<a href="https://github.com/documentcloud">https://github.com/documentcloud</a></p>
+<p>Many thanks to our contributors:
+<a href="https://github.com/jashkenas/underscore/contributors">https://github.com/jashkenas/underscore/contributors</a></p>
 
     </div>
 
