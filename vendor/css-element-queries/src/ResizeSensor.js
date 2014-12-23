@@ -1,3 +1,8 @@
+/**
+ * Copyright Marc J. Schmidt. See the LICENSE file at the top-level
+ * directory of this distribution and at
+ * https://github.com/marcj/css-element-queries/blob/master/LICENSE.
+ */
 ;
 (function() {
 
@@ -79,8 +84,8 @@
                 return;
             }
 
-            if ('onresize' in element) {
-                //internet explorer
+            if ('onresize' in element && 11 > document.documentMode) {
+                //internet explorer up to 10
                 if (element.attachEvent) {
                     element.attachEvent('onresize', function() {
                         element.resizedAttached.call();
@@ -114,8 +119,8 @@
                     element.style.position = 'relative';
                 }
 
-                var x = 0,
-                    y = 0,
+                var x = -1,
+                    y = -1,
                     firstStyle = element.resizeSensor.firstElementChild.firstChild.style,
                     lastStyle = element.resizeSensor.lastElementChild.firstChild.style;
 
