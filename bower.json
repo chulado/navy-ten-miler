@@ -17,7 +17,8 @@
     "prefixfree": "*",
     "ScrollMagic": "~1.0.8",
     "font-awesome": "~4.1.0",
-    "jquery.countdown": "~2.0.4"
+    "jquery.countdown": "~2.0.4",
+    "underscore": "~1.7.0"
   },
   "devDependencies": {
     "css-element-queries": "~0.0.1",
