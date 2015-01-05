@@ -13,7 +13,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass": "~3.0.2",
+    "bootstrap-sass": "twbs/bootstrap-sass",
     "prefixfree": "*",
     "ScrollMagic": "~1.0.8",
     "font-awesome": "~4.1.0",
