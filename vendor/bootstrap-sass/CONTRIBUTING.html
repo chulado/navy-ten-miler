@@ -70,53 +70,66 @@
 </div>
     
     <div id="wrapper">
-      <h1>Contributing to Bootstrap</h1>
-<p>Looking to contribute something to Bootstrap? <strong>Here&#39;s how you can help.</strong></p>
-<h2>Reporting issues</h2>
-<p>We only accept issues that are bug reports or feature requests. Bugs must be isolated and reproducible problems that we can fix within the Bootstrap core. Please read the following guidelines before opening any issue.</p>
+      <h1>Contributing to bootstrap-sass</h1>
+<h2>Asset Changes</h2>
+<p>Any changes to <code>bootstrap-sass</code> assets (scss, javascripts, fonts) should be checked against the <code>convert</code> rake task.
+For usage instructions, see the <a href="/README.md">README</a>.</p>
+<p>If something is broken in the converter, it&#39;s preferable to update the converter along with the asset itself.</p>
+<h2>Bugs</h2>
+<p>A bug is a <em>demonstrable problem</em> that is caused by the code in the
+repository. Good bug reports are extremely helpful - thank you!</p>
+<p>Guidelines for bug reports:</p>
 <ol>
-<li><strong>Search for existing issues.</strong> We get a lot of duplicate issues, and you&#39;d help us out a lot by first checking if someone else has reported the same issue. Moreover, the issue may have already been resolved with a fix available.</li>
-<li><strong>Create an isolated and reproducible test case.</strong> Be sure the problem exists in Bootstrap&#39;s code with a <a href="http://css-tricks.com/reduced-test-cases/">reduced test case</a> that should be included in each bug report.</li>
-<li><strong>Include a live example.</strong> Make use of jsFiddle or jsBin to share your isolated test cases.</li>
-<li><strong>Share as much information as possible.</strong> Include operating system and version, browser and version, version of Bootstrap, customized or vanilla build, etc. where appropriate. Also include steps to reproduce the bug.</li>
+<li><p><strong>Does it belong here?</strong> &mdash; is this a problem with bootstrap-sass, or
+it an issue with <a href="https://github.com/twbs/bootstrap">twbs/bootstrap</a>?
+We only distribute a direct port and will not modify files if they&#39;re not
+changed upstream.</p>
+</li>
+<li><p><strong>Use the GitHub issue search</strong> &mdash; check if the issue has already been
+reported.</p>
+</li>
+<li><p><strong>Isolate the problem</strong> &mdash; ideally create a <a href="http://css-tricks.com/6263-reduced-test-cases/">reduced test
+case</a> and a live example.</p>
+</li>
 </ol>
+<p>A good bug report shouldn&#39;t leave others needing to chase you up for more
+information. Please try to be as detailed as possible in your report. What is
+your environment? What steps will reproduce the issue? What browser(s) and OS
+experience the problem? What would you expect to be the outcome? All these
+details will help people to fix any potential bugs.</p>
+<p>Example:</p>
+<blockquote>
+<p>Short and descriptive example bug report title</p>
+<p>A summary of the issue and the browser/OS environment in which it occurs. If
+suitable, include the steps required to reproduce the bug.</p>
+<ol>
+<li>This is the first step</li>
+<li>This is the second step</li>
+<li>Further steps, etc.</li>
+</ol>
+<p><code>&lt;url&gt;</code> (a link to the reduced test case)</p>
+<p>Any other information you want to share that is relevant to the issue being
+reported. This might include the lines of code that you have identified as
+causing the bug, and potential solutions (and your opinions on their
+merits).</p>
+</blockquote>
+<p><strong><a href="https://github.com/twbs/bootstrap-sass/issues/">File a bug report</a></strong></p>
 <h2>Pull requests</h2>
-<ul>
-<li>CSS changes must be done in <code>.less</code> files first, never just the compiled <code>.css</code> files</li>
-<li>If modifying the <code>.less</code> files, always recompile and commit the compiled files <code>bootstrap.css</code> and <code>bootstrap.min.css</code></li>
-<li>Try not to pollute your pull request with unintended changes--keep them simple and small</li>
-<li>Try to share which browsers your code has been tested in before submitting a pull request</li>
-<li>Pull requests should always be against the <code>master</code> branch, never against <code>gh-pages</code>.</li>
-</ul>
-<h2>Coding standards</h2>
-<h3>HTML</h3>
-<ul>
-<li>Two spaces for indentation, never tabs</li>
-<li>Double quotes only, never single quotes</li>
-<li>Always use proper indentation</li>
-<li>Use tags and elements appropriate for an HTML5 doctype (e.g., self-closing tags)</li>
-<li>Use CDNs and HTTPS for third-party JS when possible. We don&#39;t use protocol-relative URLs in this case because they break when viewing the page locally via <code>file://</code>.</li>
-</ul>
-<h3>CSS</h3>
-<ul>
-<li>Adhere to the <a href="http://markdotto.com/2011/11/29/css-property-order/">RECESS CSS property order</a></li>
-<li>Multiple-line approach (one property and value per line)</li>
-<li>Always a space after a property&#39;s colon (e.g., <code>display: block;</code> and not <code>display:block;</code>)</li>
-<li>End all lines with a semi-colon</li>
-<li>For multiple, comma-separated selectors, place each selector on its own line</li>
-<li>Attribute selectors, like <code>input[type=&quot;text&quot;]</code> should always wrap the attribute&#39;s value in double quotes, for consistency and safety (see this <a href="http://mathiasbynens.be/notes/unquoted-attribute-values">blog post on unquoted attribute values</a> that can lead to XSS attacks).</li>
-</ul>
-<h3>JS</h3>
-<ul>
-<li>No semicolons</li>
-<li>Comma first</li>
-<li>2 spaces (no tabs)</li>
-<li>strict mode</li>
-<li>&quot;Attractive&quot;</li>
-</ul>
-<h2>License</h2>
-<p>With v3.1, we&#39;re moving from the Apache 2 to the MIT license for the Bootstrap code (not the docs). We&#39;re in the process of collecting permissions from all Bootstrap contributors with code still part of the project to make this happen. For details, please see <a href="https://github.com/twbs/bootstrap/issues/2054">#2054</a>.</p>
-<p>By contributing your code, you agree to dual-license your contribution under the <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">Apache 2</a> and <a href="https://github.com/twbs/bootstrap/blob/master/MIT">MIT</a> licenses.</p>
+<p><strong>We will not accept pull requests that modify the SCSS beyond fixing bugs caused by <em>our</em> code!</strong></p>
+<p>Most pull requests should go to <a href="https://github.com/twbs/bootstrap">twbs/bootstrap</a> or <a href="https://github.com/jlong/sass-twitter-bootstrap">jlong/sass-twitter-bootstrap</a></p>
+<p>Good pull requests - patches, improvements, new features - are a fantastic
+help. They should remain focused in scope and avoid containing unrelated
+commits. If your contribution involves a significant amount of work or substantial
+changes to any part of the project, please open an issue to discuss it first.</p>
+<p>Make sure to adhere to the coding conventions used throughout a project
+(indentation, accurate comments, etc.). Please update any documentation that is
+relevant to the change you&#39;re making.</p>
+<h2>Do not…</h2>
+<p>Please <strong>do not</strong> use the issue tracker for personal support requests (use
+<a href="http://stackoverflow.com/">Stack Overflow</a>).</p>
+<p>Please <strong>do not</strong> derail or troll issues. Keep the
+discussion on topic and respect the opinions of others.</p>
+<p><em>props <a href="https://github.com/h5bp/html5-boilerplate/blob/master/CONTRIBUTING.md">html5-boilerplate</a></em></p>
 
     </div>
 

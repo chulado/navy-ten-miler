@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navy Ten Miler</title>
+
+    <!-- build:css styles/main.css -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- endbuild -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="//use.typekit.net/tse4mee.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="navigation" role="navigation">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#thesis">Navy Ten Miler</a>
+    </div>
+
+    <div class="line-one">
+      <div class="slogan">
+        <h3>Fast and Scenic Navy-inspired Course.</h3>
+      </div>
+
+      <div class="timer">
+
+      </div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#purpose">Our Mission</a></li>
+        <li><a href="#course">The Course</a></li>
+        <li><a href="#participants">Participants</a></li>
+        <li><a href="#volunteers">Spectators</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+        <!--
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        --> 
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="btn btn-warning">Register Now <i class="fa fa-angle-right"></i></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="navbar-register-mobile">
+  <a href="#" class="btn btn-warning">Register Now <i class="fa fa-angle-right"></i></a>
+</div>
+    
+    <div id="wrapper">
+      <h1>Changelog</h1>
+<h2>3.3.1.0</h2>
+<ul>
+<li>Variables override template at templates/project/_bootstrap-variables.sass</li>
+<li>Readme: Bower + Rails configuration</li>
+</ul>
+<h2>3.3.0.1</h2>
+<ul>
+<li>Fix loading issue with the ruby gem version</li>
+</ul>
+<h2>3.3.0</h2>
+<ul>
+<li>Improve libsass compatibility</li>
+<li>Support using Bower package with Rails</li>
+</ul>
+<h2>3.2.0.2</h2>
+<p>Main bootstrap file is now a partial (_bootstrap.scss), for compatibility with Compass 1+.</p>
+<p>Fixed a number of bugs. <a href="https://github.com/twbs/bootstrap-sass/issues?q=is%3Aissue+is%3Aclosed+milestone%3Av3.2.0.2">Issues closed in v3.2.0.2</a>.</p>
+<h2>3.2.0.1</h2>
+<p>Fixed a number of bugs: <a href="https://github.com/twbs/bootstrap-sass/issues?q=is%3Aissue+is%3Aclosed+milestone%3Av3.2.0.1">Issues closed in v3.2.0.1</a>.</p>
+<h2>3.2.0.0</h2>
+<ul>
+<li>Assets (Sass, JS, fonts) moved from <code>vendor/assets</code> to <code>assets</code>. <code>bootstrap.js</code> now contains concatenated JS.</li>
+<li>Compass generator now copies JS and fonts, and provides a better default <code>styles.sass</code>.</li>
+<li>Compass, Sprockets, and Mincer asset path helpers are now provided in pure Sass: <code>bootstrap-compass</code>, <code>bootstrap-sprockets</code>, and <code>bootstrap-mincer</code>.
+Asset path helpers must be imported before <code>bootstrap</code>, more in Readme.</li>
+<li>Sprockets / Mincer JS manifest has been moved to <code>bootstrap-sprockets.js</code>.
+It can be required without adding Bootstrap JS directory to load path, as it now uses relative paths.</li>
+<li>Sprockets: <code>depend_on_asset</code> (<code>glyphicons.scss</code>) has been changed to <code>depend_on</code> to work around an issue with <code>depend_on_asset</code>.
+<a href="https://github.com/twbs/bootstrap-sass/issues/592#issuecomment-46570286">More information</a>.</li>
+</ul>
+<h2>3.1.1.0</h2>
+<ul>
+<li>Updated Bower docs</li>
+</ul>
+<h2>3.1.0.2</h2>
+<ul>
+<li><h1>523: Rails 3.2 compatibility</h1>
+</li>
+<li>Bugfixes from upstream up to 7eb532262fbd1112215b5a547b9285794b5360ab.</li>
+</ul>
+<h2>3.1.0.1</h2>
+<ul>
+<li><h1>518: <code>scale</code> mixin Sass compatibility issue</h1>
+</li>
+</ul>
+<h2>3.1.0.0</h2>
+<ul>
+<li>compiles with libsass master</li>
+</ul>
+<h2>3.0.2.1</h2>
+<ul>
+<li>fix vendor paths for compass</li>
+</ul>
+<h2>3.0.0.0</h2>
+<ul>
+<li>Fully automated (lots of string juggling) LESS -&gt; Sass conversion. - <em>Gleb Mazovetskiy</em></li>
+<li>Ported rake task from vwall/compass-twitter-bootstrap to convert Bootstrap upstream - <em>Peter Gumeson</em></li>
+<li>Moved javascripts to us <code>bootstrap-component.js</code> to <code>bootstrap/component.js</code> - <em>Peter Gumeson</em></li>
+</ul>
+<h2>2.3.2.2</h2>
+<ul>
+<li>Allow sass-rails <code>&gt;= 3.2</code> - <em>Thomas McDonald</em></li>
+</ul>
+<h2>2.3.2.1</h2>
+<h2>2.3.2.0</h2>
+<ul>
+<li>Update to Bootstrap 2.3.2 - <em>Dan Allen</em></li>
+</ul>
+<h2>2.3.1.3</h2>
+<ul>
+<li>Find the correct Sprockets context for the <code>image_path</code> function - <em>Tristan Harward, Gleb Mazovetskiy</em></li>
+</ul>
+<h2>2.3.1.2</h2>
+<ul>
+<li>Fix changes to image url - <em>Gleb Mazovetskiy</em></li>
+<li>Copy _variables into project on Compass install - <em>Phil Thompson</em></li>
+<li>Add <code>bootstrap-affix</code> to the Compass template file - <em>brief</em></li>
+</ul>
+<h2>2.3.1.1 (yanked)</h2>
+<ul>
+<li>Change how image_url is handled internally - <em>Tristan Harward</em></li>
+<li>Fix some font variables not having <code>!default</code> - <em>Thomas McDonald</em></li>
+</ul>
+<h2>2.3.0.0</h2>
+<ul>
+<li>[#290] Update to Bootstrap 2.3.0 - <em>Tristan Harward</em></li>
+<li>Fix <code>rake:debug</code> with new file locations - <em>Thomas McDonald</em></li>
+<li>Add draft contributing document - <em>Thomas McDonald</em></li>
+<li>[#260] Add our load path to the global Sass load path - <em>Tristan Harward</em></li>
+<li>[#275] Use GitHub notation in Sass head testing gemfile - <em>Timo Schilling</em></li>
+<li>[#279, #283] Readme improvements - <em>theverything, Philip Arndt</em></li>
+</ul>
+<h2>2.2.2.0</h2>
+<ul>
+<li>[#270] Update to Bootstrap 2.2.2 - <em>Tristan Harward</em></li>
+<li>[#266] Add license to gemspec - <em>Peter Marsh</em></li>
+</ul>
+<h2>2.2.1.1</h2>
+<ul>
+<li>[#258] Use <code>bootstrap</code> prefix for <code>@import</code>ing files in <code>bootstrap/bootstrap.scss</code> - <em>Umair Siddique</em></li>
+</ul>
+<h2>2.2.1.0</h2>
+<ul>
+<li>[#246] Update to Bootstrap 2.2.1 - <em>Tristan Harward</em></li>
+<li>[#246] Pull Bootstrap updates from jlong/sass-twitter-bootstrap - <em>Tristan Harward</em></li>
+</ul>
+<h2>2.1.1.0</h2>
+<ul>
+<li>Update to Bootstrap 2.1.1</li>
+<li>[#222] Remove 100% multiplier in vertical-three-colours</li>
+<li>[#227] Fix IE component animation collapse</li>
+<li>[#228] Fix variables documentation link</li>
+<li>[#231] Made .input-block-level a class as well as mixin</li>
+</ul>
+<h2>2.1.0.1</h2>
+<ul>
+<li>[#219] Fix expected a color. Got: transparent.</li>
+<li>[#207] Add missing warning style for table row highlighting</li>
+<li>[#208] Use grid-input-span for input spans</li>
+</ul>
+<h2>2.1.0.0</h2>
+<ul>
+<li>Updated to Bootstrap 2.1</li>
+<li>Changed some mixin names to be more consistent. Nested mixins in Less are separated by a <code>-</code> when they are flattened in Sass.</li>
+</ul>
+<h2>2.0.4.1</h2>
+<ul>
+<li>Fix <code>.row-fluid &gt; spanX</code> nesting</li>
+<li>Small Javascript fixes for those staying on the 2.0.4 release</li>
+<li>Add <code>!default</code> to z-index variables.</li>
+</ul>
+<h2>2.0.4.0</h2>
+<ul>
+<li>Updated to Bootstrap 2.0.4</li>
+<li>Switched to Bootstrap 2.0.3+&#39;s method of separating responsive files</li>
+<li>[#149, #150] Fix off by one error introduced with manual revert of media query breakpoints</li>
+<li><code>rake debug</code> and <code>rake test</code> both compile bootstrap &amp; bootstrap-responsive</li>
+</ul>
+<h2>2.0.3.1</h2>
+<ul>
+<li>[#145, #146] Fix button alignment in collapsing navbar as a result of an incorrect variable</li>
+</ul>
+<h2>2.0.3</h2>
+<ul>
+<li>Updated to Bootstrap 2.0.3</li>
+<li>[#106] Support for Rails &lt; 3.1 through Compass</li>
+<li>[#132] Add CI testing</li>
+<li>[#106] Support Rails w/Compass</li>
+<li>[#134] Fix support for Rails w/Compass</li>
+</ul>
+<h2>2.0.2</h2>
+<ul>
+<li>[#86] Updated to Bootstrap 2.0.2
+Things of note: static navbars now have full width. (to be fixed in 2.0.3) <code>.navbar-inner &gt; .container { width:940px; }</code> seems to work in the meanwhile</li>
+<li>[#62] Fixed asset compilation taking a <em>very</em> long time.</li>
+<li>[#69, #79, #80] (Hopefully) clarified README. Now with less cat humour.</li>
+<li>[#91] Removed doubled up Sass extensions for Rails.</li>
+<li>[#63, #73] Allow for overriding of image-path</li>
+<li><a href="http://stackoverflow.com/a/9909626/241212">[SO</a>] Added makeFluidColumn mixin for defining fluid columns. Fluid rows must use <code>@extend .row-fluid</code>, and any column inside it can use <code>@include makeFluidColumn(num)</code>, where <code>num</code> is the number of columns. Unfortunately, there is a rather major limitation to this: margins on first-child elements must be overriden. See the attached Stack Overflow answer for more information.</li>
+</ul>
+<h2>2.0.1</h2>
+<ul>
+<li>Updated to Bootstrap 2.0.1</li>
+<li>Modified <code>@mixin opacity()</code> to take an argument <code>0...1</code> rather than <code>0...100</code> to be consistent with Compass.</li>
+</ul>
+<h2>2.0.0</h2>
+<ul>
+<li>Updated to Bootstrap 2.0.0</li>
+</ul>
+
+    </div>
+
+    <div id="footer">
+  <div class="container">
+    
+
+
+ 
+
+    <div class="copyright">
+      A RunNAVY Production.
+      <br>
+      <b>NOT AFFILIATED WITH THE US GOVERNMENT.</b>
+      <br>
+      Copyright &copy; 2014 <a href="mailto:ryan@navytenmiler.com">Navy Ten-Miler</a>. All Rights Reserved. Design by <a href="https://www.chulado.com" target=
+      "blank">Chulado</a>.
+    </div>
+  </div>
+</div>
+
+    <!-- build:js scripts/main.js -->
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/underscore/underscore.js"></script>
+    <script src="vendor/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="vendor/gsap/src/uncompressed/TimelineMax.js"></script>
+    <script src="vendor/gsap/src/uncompressed/plugins/ScrollToPlugin.js"></script>
+    <script src="vendor/ScrollMagic/js/jquery.scrollmagic.js"></script>
+    <script src="vendor/prefixfree/prefixfree.min.js"></script>
+    <script src="vendor/bootstrap-sass/js/transition.js"></script>
+    <script src="vendor/bootstrap-sass/js/dropdown.js"></script>
+    <script src="vendor/bootstrap-sass/js/button.js"></script>
+    <script src="vendor/bootstrap-sass/js/collapse.js"></script>
+    <script src="vendor/jquery.countdown/dist/jquery.countdown.js"></script>
+    <script src="scripts/chrome-smooth.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
