@@ -400,10 +400,8 @@ header {
 
     .feature-body {
       @extend .media-body;
-      position: relative;
       padding: 2%;
-      top: 50%;
-      transform: translateY(-50%);
+      padding-left: 5%;
       h4 { @extend .media-heading; }
     }
   }
