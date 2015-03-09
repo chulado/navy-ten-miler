@@ -116,7 +116,9 @@ merits).</p>
 <p><strong><a href="https://github.com/twbs/bootstrap-sass/issues/">File a bug report</a></strong></p>
 <h2>Pull requests</h2>
 <p><strong>We will not accept pull requests that modify the SCSS beyond fixing bugs caused by <em>our</em> code!</strong></p>
-<p>Most pull requests should go to <a href="https://github.com/twbs/bootstrap">twbs/bootstrap</a> or <a href="https://github.com/jlong/sass-twitter-bootstrap">jlong/sass-twitter-bootstrap</a></p>
+<p>We use a <a href="https://github.com/twbs/bootstrap-sass/blob/master/README.md#upstream-converter">converter script</a> to automatically convert upstream bootstrap, written in LESS, to Sass.</p>
+<p>Issues related to styles or javascript but unrelated to the conversion process should go to <a href="https://github.com/twbs/bootstrap">twbs/bootstrap</a>.</p>
+<p>Pull requests that fix bugs caused by our code should not modify the SCSS directly, but should patch the converter instead.</p>
 <p>Good pull requests - patches, improvements, new features - are a fantastic
 help. They should remain focused in scope and avoid containing unrelated
 commits. If your contribution involves a significant amount of work or substantial
