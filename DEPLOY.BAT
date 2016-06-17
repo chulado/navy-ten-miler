@@ -1,0 +1,1 @@
+harp compile app -o ../dist && grunt build && grunt gh-pages & rmdir dist /s /q & PAUSE

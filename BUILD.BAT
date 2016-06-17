@@ -1,0 +1,1 @@
+harp compile app -o ../dist && grunt build & PAUSE

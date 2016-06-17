@@ -1,0 +1,162 @@
+.parallax-enabled {
+
+  header {
+    z-index: 5;
+  }
+
+  &#thesis {
+    background: none;
+
+    .parallax-foreground {
+      position: absolute;
+      left: 0;
+      right: 0;
+      //height: 0;
+      background: url("../images/parallax-sunset-front.png") no-repeat top;
+      //padding-top: 93.686868686%;
+      z-index: 1;
+      bottom: 0;
+      top: 0;
+
+      background-position: 50% 90%;
+      background-size: cover;
+
+
+      @media (max-width: $screen-sm) {
+        background-position: 10% 100%;
+      }
+
+      @media (min-width: 1300px) {
+        background-position: 50% 68%;
+      }
+    }
+
+    .parallax-background {
+      position: absolute;
+      left: 0;
+      right: 0;
+      //height: 0;
+      top: 0;
+      bottom: 0;
+      background: url("../images/parallax-sunset-back.png") no-repeat top;
+      //padding-top: 93.686868686%;
+      z-index: 0;
+
+      background-position: 50% 90%;
+      background-size: cover;
+
+
+      @media (max-width: $screen-sm) {
+        background-position: 10% 100%;
+      }
+
+      @media (min-width: 1300px) {
+        background-position: 50% 68%;
+      }
+    }
+  }
+
+  &#purpose {
+    background-image: none;
+    position: relative;
+
+    .parallax-foreground {
+      @extend #purpose;
+      background-image: url("../images/parallax-rails-foreground.png");
+      background-position: center bottom;
+
+      padding: 0;
+      height: auto;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      bottom: 0;
+      top: 0;
+
+    }
+
+    .parallax-background {
+      @extend #purpose;
+      background-image: url("../images/parallax-rails-background.png");
+
+      padding: 0;
+      height: auto;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 0;
+      bottom: -10%;
+      top: -10%;
+    }
+  }
+
+  &#prices {
+    .parallax-helicopter {
+      @extend #prices;
+      background-image: url("../images/parallax-landing-top.png");
+
+      padding: 0;
+      height: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: 2;
+    }
+
+    .parallax-ship {
+      @extend #prices;
+      background-image: url("../images/parallax-landing-middle.png");
+
+      padding: 0;
+      height: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    .parallax-background {
+      @extend #prices;
+      background-image: url("../images/parallax-landing-background.png");
+
+      padding: 0;
+      height: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: 0;
+    }
+  }
+
+  #course {
+    background: none;
+    position: relative;
+    .parallax-background {
+      background: #2d9fd1 url(../images/map.jpg) no-repeat center top;
+      background-size: 100% auto;
+
+      padding: 0;
+      height: auto;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 0;
+      bottom: 0%;
+      top: 0%;
+    }
+  }
+
+}
+
+
+.no-flick{ -webkit-transform-style: preserve-3d; }

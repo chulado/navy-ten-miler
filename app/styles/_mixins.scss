@@ -1,0 +1,152 @@
+.arrowed-down {
+  padding-bottom: 13.8vw;
+
+
+  &:before {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    right: 50%;
+    top: 100%;
+    margin-top: -14.8vw;
+    //-webkit-backface-visibility: hidden;
+    transform: skewY(16.5deg);
+    content: "";
+    z-index: 100;
+  }
+  &:after {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin-top: -14.8vw;
+    //-webkit-transform-style: preserve-3d; 
+    //-webkit-backface-visibility: hidden;
+    transform: skewY(-16.5deg);
+    z-index: 100;
+    content: "";
+  }
+}
+
+
+.arrowed-up {
+  padding-top: 13.8vw;
+
+  &:before {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    right: 50%;
+    bottom: 100%;
+    margin-bottom: -14.8vw;
+    //-webkit-transform-style: preserve-3d; 
+    //-webkit-backface-visibility: hidden;
+    transform: skewY(-16.5deg);
+    z-index: 100;
+    content: "";
+  }
+  &:after {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    margin-bottom: -14.8vw;
+    //-webkit-transform-style: preserve-3d; 
+    //-webkit-backface-visibility: hidden;
+    z-index: 100;
+    transform: skewY(16.5deg);
+    content: "";
+  }
+}
+
+.arrowed-down-top {
+  @extend .arrowed-up;
+  &:before {
+    margin-bottom: 0;
+    right: auto;
+    left: 50%;
+    transform: skewY(-16.5deg);
+    margin-left: -1px;
+  }
+  &:after {
+    margin-bottom: 0;
+    left: auto;
+    right: 50%;
+    transform: skewY(16.5deg);
+  }
+}
+
+.arrowed-dualing {
+  div {
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    height: 7.16vw;
+    position: relative;
+    @extend .arrowed-up;
+    @extend .arrowed-light;
+  }
+
+  clear: both;
+  overflow: hidden;
+}
+
+
+
+.arrowed-long-left {
+  padding-bottom: 24.8vw;
+
+  &:after {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: -14.8vw;
+    //-webkit-transform-style: preserve-3d; 
+    //-webkit-backface-visibility: hidden;
+    transform: skewY(-16.5deg);
+    z-index: 100;
+    content: "";
+  }
+}
+
+.arrowed-long-right {
+  padding-bottom: 24.8vw;
+
+  &:after {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    margin-bottom: -14.8vw;
+    //-webkit-transform-style: preserve-3d; 
+    //-webkit-backface-visibility: hidden;
+    transform: skewY(-16.5deg);
+    z-index: 100;
+    content: "";
+  }
+}
+
+
+.arrowed-dark { 
+  &:before, &:after { background: url(../images/pattern-dark.jpg); }
+}
+
+.arrowed-light { 
+  &:before, &:after { background: url(../images/pattern-light.jpg); }
+}
+
+
+.arrowed-white { 
+  &:before, &:after { background: white; }
+}
